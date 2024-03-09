@@ -1,0 +1,52 @@
+:root{
+    --example1-color: #fb366c;
+    --example2-color: #FFFFFF;
+    --example3-color: #000000;
+
+    /* Static Font Sizes */
+    --font-size-small-mobile: 10px;
+    --font-size-mobile: 11px;
+    --font-size-tablet: 12px;
+    --font-size-laptop: 14px;
+    --font-size-desktop: 16px;
+    --font-size-large-desktop: 18px;
+    --font-size-huge-desktop: 22px;
+}
+
+/* Reset */
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Assigned Font Sizes */
+a { text-decoration: none; }
+p { font-size: 1.3rem; }
+h1 { font-size: 4rem; letter-spacing: 0.1rem; }
+h2 { font-size: 3rem;}
+h3 { font-size: 2rem;  }
+h4 { font-size: 1.5rem; }
+button, a { font-size: 1.3rem; }
+
+/* Reset Button */
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+/* Dinamic Font Sizes */
+html {font-size: var(--font-size-small-mobile);}
+@media (min-width: 425px) { html {font-size: var(--font-size-mobile);} }
+@media (min-width: 600px) { html {font-size: var(--font-size-tablet);} }
+@media (min-width: 1240px) { html {font-size: var(--font-size-laptop);} }
+@media (min-width: 1400px) { html {font-size: var(--font-size-desktop);} }
+@media (min-width: 1900px) { html {font-size: var(--font-size-large-desktop);} }
+@media (min-width: 2500px) { html {font-size: var(--font-size-huge-desktop);} }
+

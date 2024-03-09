@@ -1,1 +1,1 @@
-# store-front
+# Store Front
